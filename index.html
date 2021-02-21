@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Doctor Who survey form</p>
+  </div>
+  <form action="" id="survey-form">
+    <label for="" id="name-label">Name*
+      <input type="text" id="name" class="input" placeholder="First and Last Name"
+        required autofocus>
+    </label>
+    <label for="" id="email-label">Email*
+      <input type="email" id="email" class="input" placeholder="Best Email"
+        required autocomplete="off">
+    </label>
+    <label for="" id="number-label">Age*
+      <input class="input" type="number" name="" id="number" min="12" max="100"
+        placeholder="You must be 12 or older" required>
+    </label>
+    <label for="">Choose The Best Doctor
+      <select class="fix" name="doctor" id="dropdown">
+        <option selected disabled name="" value="">Select an option</option>
+        <option value="ce">Christopher Eccleston</option>
+        <option value="dt">David Tennant</option>
+        <option value="ms">Matt Smith</option>
+        <option value="pc">Peter Capaldi</option>
+        <option value="jw">Jodie Whittaker</option>
+      </select>
+    </label>
+    <label  for="" id="radio-button">Do you like Clara Oswald?<br>
+      <input class="chk-and-rad" type="radio" name="y-n" id="" value="1" checked> Yes<br>
+      <input class="chk-and-rad" type="radio" name="y-n" id="" value="2"> No
+    </label>
+    <label for="" id="checkbox-button">Favorite Characters<br>
+      <input class="chk-and-rad" type="checkbox" name="characters" id="" value="1"> Clara Oswald<br>
+      <input class="chk-and-rad" type="checkbox" name="characters" id="" value="2"> River Song <br>
+      <input class="chk-and-rad" type="checkbox" name="characters" id="" value="3"> The Master <br>
+      <input class="chk-and-rad" type="checkbox" name="characters" id="" value="4"> Missy <br>
+      <input class="chk-and-rad" type="checkbox" name="characters" id="" value="5"> Rose Tyler <br>
+      <input class="chk-and-rad" type="checkbox" name="characters" id="" value="6"> Captain Jack Harkness <br>
+    </label>
+    <label for="">Leave a Message</label>
+    <textarea class="" name="" id="" rows="10" placeholder="Message"></textarea>
+    <button class="fix" type="submit" id="submit">Submit</button>
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
